@@ -8,15 +8,27 @@
     */
 
     //Entrada
-
+    let lista = ["Gol", "YBR", "CG", "Titan", "Palio", "Fusca", "Harley Davidson"];
+    let moto = [];
+    let carro = [];
 
     //Processamento
-
+    for (let automovel of lista) {
+        const pergunta = prompt(`${automovel} é Carro (C) ou Moto (M)?`).toUpperCase()
+        if(pergunta == "C"){
+            carro.push(automovel)
+        }
+        else {
+            moto.push(automovel)
+        }
+        
+    }
 
     //Saída
+    alert(`Lista carros: ${carro.join(", ")}\nlista Motos: ${moto.join(", ")}`)
 
     /*
-    Lista de carros: Gol, Palio, Fusca
+    Lista de Carros: Gol, Palio, Fusca
     Lista de motos: YBR, CG, Titan, Harley Davidson
     */
 </script>

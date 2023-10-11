@@ -7,12 +7,23 @@
     */
 
     //Entrada
-
+    let lista = [30, 20, 25, 17, 99, 12];
+    let par = [];
+    let impar = [];
 
     //Processamento
+    for (const num of lista) {
+        if (num % 2 == 0){
+            par.push(num)
+        }
+        else{
+            impar.push(num)
+        }
 
+    }
 
     //Saída
+    alert (`Lista Crescente: ${lista.sort().join(", ")}\nLista Pares: ${par.sort().join(", ")}\nLista Impares: ${impar.sort().join(", ")}\n`)
 
     /*
     O programa deverá apresentar:
